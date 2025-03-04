@@ -1,0 +1,14 @@
+@import url(style-reset.css);
+@import url(body.css);
+
+:root{
+    --color-neutral-1: #fafafa;
+
+    --color-primary-1: #CCFF00;
+    --color-primary-2: #B1D523;
+    --color-primary-3: #93AA39;
+    --color-primary-4: #738040;
+    --color-primary-5: #4F5539;
+    --color-primary-6: #31332B;
+    --color-primary-6: #31332B;
+}

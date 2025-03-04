@@ -1,0 +1,166 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: var(--color-primary-1);
+}
+
+main{
+    min-height: 90vh;
+    width: 65vw;
+    text-align: center;
+}
+
+.todo-title{
+    margin-top: 2rem;
+    color: var(--color-primary-6);
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 4rem;
+    gap: 1rem;
+}
+
+.input-task{
+    padding-left: 1rem;
+    height: 2.5rem;
+    width: 80%;
+    background-color: transparent;
+    border: .5px solid var(--color-primary-4);
+    outline: none;
+    border-radius: 8px;
+    font-size: medium;
+    box-shadow: rgba(50, 50, 93, 0.75) 0px 6px 12px -2px, rgba(0, 0, 0, 0.5) 0px 3px 7px -3px;
+}
+
+.input-task::selection{
+    font-size: medium;
+    color: var(--color-primary-1);
+    background-color: var(--color-primary-5);
+}
+
+.input-task::placeholder{
+    font-weight: 500;
+    color: var(--color-primary-5);
+}
+
+.input-btn{
+    height: 2.5rem;
+    width: 20%;
+    border-radius: 4rem;
+    background-color: var(--color-primary-4);
+    color: var(--color-neutral-1);
+    border: none;
+    font-size: medium;
+    transition: .2s;
+    box-shadow: rgba(50, 50, 93, 0.75) 0px 6px 12px -2px, rgba(0, 0, 0, 0.5) 0px 3px 7px -3px;
+}
+
+.input-btn:hover{
+    background-color: var(--color-primary-3);
+    cursor: pointer;
+}
+
+.todo-item-close:hover{
+    color: var(--color-primary-4);
+    cursor: pointer;
+}
+
+.main-section ul{
+    margin-top: 1rem;
+}
+
+.todo-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 2.5rem;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--color-primary-2);
+    color: var(--color-primary-6);
+    margin: 1rem 0;
+    border-radius: .5rem;
+    padding: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.75) 0px 6px 12px -2px, rgba(0, 0, 0, 0.5) 0px 3px 7px -3px;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.todo-item-close{
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.p-footer{
+    padding: 1rem;
+}
+
+@media screen and (max-width:960px) {
+    main{
+        width: 80vw;
+    }
+}
+
+
+@media screen and (max-width:840px) {
+    body{
+        width: 100%;
+    }
+    
+    main{
+        width: 90vw;
+        text-align: center;
+    }
+
+    .main-section{
+        margin-top: 2rem;
+        display: block;
+        flex-direction: column;
+    }
+
+    .input-task{
+        width: 100%;
+    }
+
+    .input-btn{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:470) {
+    main{
+        width: 90vw;
+        text-align: center;
+    }
+
+    .main-section{
+        display: block;
+        flex-direction: column;
+    }
+
+    .input-task{
+        width: 90%;
+    }
+
+    .input-btn{
+        width: 90%;
+    }
+}
